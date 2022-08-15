@@ -1,0 +1,206 @@
+Collections of variables
+function & lambda functions
+
+Python Commands - 
+juypter notebook - jupyter notebook
+Markdown Syntax - https://www.markdownguide.org/basic-syntax/
+
+
+- AXIS ------------------------------ 
+ 0 = Rows
+ 1 = Columns
+
+- Libraries ------------------------------ 
+ NumPy - multi-dimensional arrays
+	import numpy as np
+
+ Scipy - stats package
+
+ Scikit-learn - machine learning
+
+ Metaplotlib, Seaborn - visualisation
+ 	import seaborn as sns
+	import matplotlib.pyplot as plt
+	sns.set(color_codes=True) # adds a nice background to the graphs
+	%matplotlib inline # tells python to actually display the graphs
+
+ 	
+ Pandas - handles arrays and data frames
+ 	import pandas as pd
+
+ Warning
+	import warnings
+
+
+
+# this will help in making the Python code more structured automatically (good coding practice)
+%load_ext nb_black
+
+# Libraries to help with reading and manipulating data
+import numpy as np
+import pandas as pd
+
+# Libraries to help with data visualization
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# to split the data into train and test
+from sklearn.model_selection import train_test_split
+
+# to build linear regression_model
+from sklearn.linear_model import LinearRegression
+
+# to check model performance
+from sklearn.metrics import mean_squared_error
+
+
+
+- Style Info ------------------------------ 
+Problem Statement 
+What is your data
+What are your goals
+
+
+- Comments ------------------------------ 
+
+# - single line comments
+''' - for multi line comments, need 3 quotes at open and close
+
+
+- To Change Directory ------------------------------ 
+
+import os
+os.chdir('c:/users/IT') # changes directory to mentioned path
+
+
+- To Get Current Directory ------------------------------ 
+
+import os
+os.getcwd() #gets the current working directory
+
+
+- Short Cuts ------------------------------ 
+
+shift + enter - Runs Cell and goes to the next cell
+control + enter - Run Cell but stay in cell
+alt + enter - Run cell and create new cell below
+tab - complete line
+shift + tab - see description of function
+
+
+- Variables ------------------------------ 
+
+variable_name = numeric value
+variable_name = "string"
+variable_name = [variable,variable,variable] - list
+add = a + b
+subtraction = a - b
+multiplication = a * b
+division = a / b 
+remainder = a % b 
+
+show type of variable = type(variable_name)
+
+- operators ------------------------------ 
++ = addition
+- = subtraction
+* = multiplication
+/ = division
+% = modulus (reminder?)
+** = exponentiation
+// = floor division
+
+- Get user input ------------------------------ 
+
+variable_name = input("Text you want printed") - accepts input as a string
+variable_name = float(input("Text you want printed")) - makes input a float
+
+- Data Collections ------------------------------ 
+list_name = [item, item, item] = index 0
+tuple_name = (item, item, item) = cannot edit
+set_name = {item, item, item} = not indexed
+dictionary_name = {index_name: "variable", index_name: "variable" } = sets the index to something you define
+index_name["dictionary_item" = updated_data] = update an index value to something new
+
+- Decision Making ------------------------------ 
+
+if condition: 
+statment to be executed
+
+elif condition:
+	statement to be executed
+else:
+
+
+else{
+statment to be executed
+}
+
+
+- Looping ------------------------------ 
+
+while(true){
+statement to be executed
+}
+
+while(variable_name == something){
+statement to be executed
+}
+
+for value in variable_name:
+	print(value)
+	
+	
+- Functions ------------------------------ 
+def function_name():
+	if variable_name > something:
+		return something
+		
+	elif variable_name < something:
+		return something
+		
+	else:
+		return something
+		
+function_name() - to invoke
+
+Build in Function - 
+	group by - example looking at population of US, now group them by the state
+	merge - join operation between data frames or series
+	join - 
+
+- Some NumpPy Functions ------------------------------ 
+
+Np.array(). - create an array
+np.zeroes() - create array of zero
+Np.ones() - create array of 1s
+np.random.randn() - create an array of specified shape filled with random values
+np.dot() - dot product
+np.transpose - permute array dimensions
+np.concatentate() - concatenate two array
+
+
+- Some Pandas Functions ------------------------------
+df.head() - to get top rows
+df.tail() - show last rows
+df.describe - To get the quick statistical summary
+df.groupby() - to split, apply or combine data structures
+df.astype() - to convert into some other data types
+df.value_counts() - to get count of some attributes
+
+
+pd.concat() - two concatenate two pandas objects
+pd.merge() - merge pandas data frames
+
+
+
+
+Customer_Age
+Dependent_count
+Months_on_book
+Total_Relationship_Count
+Months_Inactive_12_mon
+Total_Revolving_Bal
+Total_Trans_Ct
+Avg_Utilization_Ratio
+
